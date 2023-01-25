@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
 
   Menu(){
     this.icono=!this.icono;
-    console.log(this.icono)
   }
 
   logout(){

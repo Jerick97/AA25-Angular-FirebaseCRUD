@@ -8,7 +8,7 @@
             <i [ngClass]="icono ? 'bi bi-list' : 'bi bi-x-circle'" (click)="Menu()"></i>
         </span>
     </div>
-    <ul [ngClass]="{'hidden': icono, 'top-[80px] opacity-100 absolute': !icono}" class="md:flex md:items-center md:z-auto absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+    <ul [ngClass]="{'top-[80px] opacity-100 absolute': !icono, 'top-[80px] opacity-0 absolute': icono}" class="md:flex md:items-center md:z-auto absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
         <li class="mx-4 my-6 md:my-0"><a [routerLink]="['/home']" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact: true}" class="text-xl hover:text-cyan-500 duration-500">Registrar Productos</a></li>
         <li class="mx-4 my-6 md:my-0"><a [routerLink]="['/listar']" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{exact: true}" class="text-xl hover:text-cyan-500 duration-500">Listar Productos</a></li>
     
